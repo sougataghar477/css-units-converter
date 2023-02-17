@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./custom.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ch to Px converter</title>
+</head>
+
+<body class="">
+    <nav class="absolute inset-x-0 bg-gray-800 px-12 gap-8 py-4 text-white font-bold">
+        <span>Ch to Px Converter</span>
+
+    </nav>
+    <article class="bg text-white h-screen px-4 py-24 grid justify-items-center lg:place-items-center">
+        <div class="font-bold w-80">
+            <h1>Type in any of the fields to automatically calculate values.</h1>
+            <div class="flex flex-col   mx-auto gap-2 mt-4">
+                <label class="assumption italic">If 1 REM is 16px</label>
+                <input placeholder="Enter value in pixels" value="16"
+                    class="p-2 rem text-black font-bold placeholder:text-black placeholder:italic" type="number"
+                    pattern="[0-9]+" />
+            </div>
+            <div class="flex relative   mx-auto gap-2 mt-4">
+                <!-- <label class="italic">Ch</label> -->
+                <select class="selector  p-2 absolute bg-gray-400 w-24 bottom-0 top-0   text-black font-bold placeholder:text-black placeholder:italic" id="cars">
+                    <option value="ch">ch</option>
+                    <option value="cm">cm</option>
+                    <option value="mm">mm</option>
+                    <option value="Q">Q</option>
+                    <option value="in">in</option>
+                    <option value="pc">pc</option>
+                    <option value="pt">pt</option>
+                  </select>
+                <input placeholder="Enter value in ch"
+                    class="py-2 pl-28 pr-2 ch w-full  text-black font-bold placeholder:text-black placeholder:italic" type="number"
+                    pattern="[0-9]+" />
+            </div>
+            <div class="flex flex-col    mx-auto gap-2 mt-4">
+                <label class="italic">Px</label>
+                <input placeholder="Enter value in pixels"
+                    class="p-2 px text-black font-bold placeholder:text-black placeholder:italic" type="number"
+                    pattern="[0-9]+" />
+            </div>
+            <h1 class="mt-4 italic">Note that except ch,no other units depend on the value of REM </h1>
+            <h1 class="mt-4">Finding this helpful? Feel free to donate </h1>
+            <button
+                class="bg-black py-3 w-full my-4 font-bold ease-linear duration-300 hover:bg-white hover:text-black">Donate</button>
+            <span class="flex flex-col gap-y-1 lg:absolute bottom-5 right-8">
+                <a href="#" class="underline text-white hover:text-sky-500">Source Code <img
+                        class="w-5 align-top inline " src="./githublogo.png" /></a>
+                <a class="underline text-white hover:text-sky-500" href="https://sougataghar477.github.io/">Made with 💙
+                    by Sougata Ghar</a>
+            </span>
+        </div>
+    </article>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
+<!-- 589E1F -->
