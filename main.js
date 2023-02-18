@@ -7,7 +7,8 @@ let allowedkeys = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 variableInput.addEventListener("input", calculatePx);
 px.addEventListener("input", calculateCh);
 rem.addEventListener("input", calculateBasedonRem);
-selector.addEventListener("change", handleSelector)
+selector.addEventListener("change", handleSelector);
+rem.disabled = selector.value !== "ch";
 function calculatePx(e) {
     let b = Number(e.target.value);
     switch (selector.value) {
@@ -88,9 +89,13 @@ function calculateBasedonRem(e) {
     px.value = output;
 }
 function handleSelector(e) {
+    const { value } = e.target;
+    rem.disabled = value !== "ch";
     if (variableInput.value) {
-        const { value } = e.target;
+        
         let b = Number(variableInput.value);
+        
+        
         switch (value) {
             case 'ch':
                 let remValue = Number(rem.value);
