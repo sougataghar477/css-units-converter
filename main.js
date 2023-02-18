@@ -259,6 +259,5 @@ function calculateBasedonRem(e) {
     if (selector.value !== "ch" && bottomselector.value === "ch") {
         conversion = selector.value + 'to' + bottomselector.value;
     }
-    console.log(conversion)
     handleMidSelector(conversion)
 }
