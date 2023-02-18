@@ -1,4 +1,5 @@
 
+
   .bg{
     /* background: linear-gradient(to right, #0f2027, #203a43, #2c5364); */
     background: linear-gradient(to right, #141e30, #243b55); 
@@ -6,4 +7,7 @@
  
   input{
     background-color: #EBF2F8 !important;
+  }
+  .rem:disabled{
+    background-color:#9CA3AF !important ;
   }

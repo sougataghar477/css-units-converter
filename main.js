@@ -9,6 +9,7 @@ px.addEventListener("input", calculateCh);
 rem.addEventListener("input", calculateBasedonRem);
 selector.addEventListener("change", handleSelector);
 rem.disabled = selector.value !== "ch";
+//Calculate value of pixels from input which has variable value
 function calculatePx(e) {
     let b = Number(e.target.value);
     switch (selector.value) {
@@ -44,6 +45,7 @@ function calculatePx(e) {
     }
 
 }
+//Calculate value of variable inputs from input which has pixel value
 function calculateCh(e) {
     let b = Number(e.target.value);
 
@@ -80,6 +82,7 @@ function calculateCh(e) {
     }
 }
 
+//Calculate value of pixels from rem value
 function calculateBasedonRem(e) {
 
     let remValue = Number(e.target.value);
